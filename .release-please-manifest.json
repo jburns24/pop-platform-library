@@ -1,0 +1,4 @@
+{
+  "modules/argocd": "0.0.1",
+  "modules/eks": "0.0.1"
+}
