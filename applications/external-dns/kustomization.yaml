@@ -1,0 +1,23 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: external-dns
+
+resources:
+  - namespace.yaml
+
+helmCharts:
+  - name: external-dns
+    repo: https://kubernetes-sigs.github.io/external-dns/
+    releaseName: external-dns
+    version: 1.15.0
+    namespace: external-dns
+    valuesInline:
+      provider:
+        name: aws
+      env:
+        - name: AWS_DEFAULT_REGION
+          value: us-east-1
+      extraArgs:
+        - --aws-prefer-cname
+        - --txt-prefix=txt-

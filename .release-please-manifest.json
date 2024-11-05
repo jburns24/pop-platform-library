@@ -1,0 +1,18 @@
+{
+  "packages": {
+    "modules/argocd": {
+      "release-type": "simple",
+      "package-name": "argocd"
+    },
+    "modules/eks": {
+      "release-type": "simple",
+      "package-name": "eks"
+    }
+  },
+  "monorepo": true,
+  "release-type": "simple",
+  "tag-separator": "-v",
+  "skip-github-release": true,
+  "skip-changelog": true,
+  "include-component-in-tag": true
+}

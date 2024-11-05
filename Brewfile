@@ -1,0 +1,16 @@
+# Brewfile
+
+tap "hashicorp/tap"
+brew "awscli"
+brew "hashicorp/tap/terraform"
+brew "terraform-docs"
+brew "pre-commit"
+brew "tflint"
+brew "commitizen"
+brew "trivy"
+brew "trufflehog"
+brew "argocd"
+brew "k9s"
+brew "kubectl"
+tap "flux-iac/tap"
+brew "flux-iac/tap/tfctl"
