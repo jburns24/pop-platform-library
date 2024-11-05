@@ -2,11 +2,13 @@
   "packages": {
     "modules/argocd": {
       "release-type": "simple",
-      "package-name": "argocd"
+      "package-name": "argocd",
+      "initial-version": "0.1.0"
     },
     "modules/eks": {
       "release-type": "simple",
-      "package-name": "eks"
+      "package-name": "eks",
+      "initial-version": "0.1.0"
     }
   },
   "monorepo": true,

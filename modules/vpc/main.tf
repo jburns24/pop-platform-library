@@ -14,8 +14,6 @@ data "aws_subnet" "existing_private_subnets" {
   id       = each.value
 }
 
-
-
 # trivy:ignore:avd-aws-0102 Critical: Set specific allowed ports
 # trivy:ignore:avd-aws-0105 Critial: Set a more restrictive cidr range
 # trivy:ignore:avd-aws-0178 Medium: Enable flow logs for VPC
