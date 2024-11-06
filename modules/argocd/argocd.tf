@@ -11,7 +11,6 @@ data "aws_secretsmanager_secret" "argo_notifications_ms_teams_secret" {
   name  = var.argo_notifications_ms_teams_secret_name
 }
 
-
 data "aws_secretsmanager_secret_version" "argo_notifications_ms_teams_secret_version" {
   count     = var.argo_notifications_ms_teams_secret_name != "" ? 1 : 0
   secret_id = data.aws_secretsmanager_secret.argo_notifications_ms_teams_secret[0].id
