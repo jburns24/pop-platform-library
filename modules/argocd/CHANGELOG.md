@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/jburns24/pop-platform-library/compare/argocd/v0.1.0...argocd/v0.1.1) (2024-11-06)
+
+
+### Bug Fixes
+
+* **argocd:** test ([572f308](https://github.com/jburns24/pop-platform-library/commit/572f30830efe5a05950eb1d2b035942031e27d3b))
+
 ## [0.1.0](https://github.com/jburns24/pop-platform-library/compare/argocd-v0.0.1...argocd-v0.1.0) (2024-11-06)
 
 

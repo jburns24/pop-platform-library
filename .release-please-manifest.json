@@ -1,4 +1,4 @@
 {
-  "modules/argocd": "0.1.0",
+  "modules/argocd": "0.1.1",
   "modules/eks": "0.0.1"
 }
