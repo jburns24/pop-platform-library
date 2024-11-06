@@ -6,7 +6,6 @@ data "aws_secretsmanager_secret_version" "github_app_sso_config_secret" {
   secret_id = data.aws_secretsmanager_secret.github_app_sso_config_secret.id
 }
 
-
 data "aws_secretsmanager_secret" "argo_notifications_ms_teams_secret" {
   count = var.argo_notifications_ms_teams_secret_name != "" ? 1 : 0
   name  = var.argo_notifications_ms_teams_secret_name
