@@ -36,6 +36,7 @@ resource "kubernetes_secret" "argo_dex_secret" {
   }
 }
 
+
 resource "kubernetes_secret" "argo_notifications_ms_teams" {
   count = var.argo_notifications_ms_teams_secret_name != "" ? 1 : 0
   type  = "Opaque"
